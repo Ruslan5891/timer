@@ -7,11 +7,7 @@ function App() {
     const [time, setTime] = useState({ ms: 0, s: 0, m: 0, h: 0 });
     const [interv, setInterv] = useState();
     const [status, setStatus] = useState(0);
-    // Not started = 0
-    // started = 1
-    // stopped = 2
-    console.log("STATUS", status);
-    console.log("INTERV", interv);
+  
     const start = () => {
         if (status === 0 || status === 2) {
             run();
