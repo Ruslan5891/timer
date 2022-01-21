@@ -5,6 +5,8 @@ import { interval, Subject } from "rxjs";
 import { takeUntil } from "rxjs/operators";
 
 export default function App() {
+
+    const popop = "sdas";
     const something = "something";
     const [sec, setSec] = useState(0);
     const [status, setStatus] = useState("stop");
