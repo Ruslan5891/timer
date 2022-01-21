@@ -7,6 +7,7 @@ import { takeUntil } from "rxjs/operators";
 export default function App() {
     const [sec, setSec] = useState(0);
     const [status, setStatus] = useState("stop");
+    console.log(new Subject());
 
     useEffect(() => {
         const unsubscribe$ = new Subject();
@@ -47,7 +48,7 @@ export default function App() {
                 <button onClick={start}>Start</button>
                 <button onClick={stop}>Stop</button>
                 <button onClick={reset}>Reset</button>
-                <button onClick={wait}>Wait</button>
+                <button onDoubleClick={wait}>Wait</button>
             </div>
         </div>
     );
